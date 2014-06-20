@@ -1,22 +1,22 @@
-SpreeCustomerDeliveryDay
-========================
+SpreeCustomerDeliveryDate
+=========================
 
 Allows for a customer to choose a date when he want the goods to be delivered. The field is stored on the order and it can be filled in, in the shipping phase of the checkout process. It uses pickadate.js to select the date.
 
 Installation
 ------------
 
-Add spree_customer_delivery_day to your Gemfile:
+Add spree_customer_delivery_date to your Gemfile:
 
 ```ruby
-gem 'spree_customer_delivery_day'
+gem 'spree_customer_delivery_date'
 ```
 
 Bundle your dependencies and run the installation generator:
 
 ```shell
 bundle
-bundle exec rails g spree_customer_delivery_day:install
+bundle exec rails g spree_customer_delivery_date:install
 ```
 
 The extension adds following preferences to Spree::AppConfiguration
@@ -46,7 +46,7 @@ When testing your applications integration with this extension you may use it's 
 Simply add this require statement to your spec_helper:
 
 ```ruby
-require 'spree_customer_delivery_day/factories'
+require 'spree_customer_delivery_date/factories'
 ```
 
 Copyright (c) 2014 Jan Vereecken, released under the New BSD License

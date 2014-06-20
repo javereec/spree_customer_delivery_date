@@ -1,8 +1,8 @@
-module SpreeCustomerDeliveryDay
+module SpreeCustomerDeliveryDate
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_customer_delivery_day'
+    engine_name 'spree_customer_delivery_date'
 
     # use rspec for tests
     config.generators do |g|

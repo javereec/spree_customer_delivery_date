@@ -1,7 +1,7 @@
 # encoding: UTF-8
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_customer_delivery_day'
+  s.name        = 'spree_customer_delivery_date'
   s.version     = '2.2.2'
   s.summary     = 'Allows the customer to set a delivery day.'
   s.description = s.summary
@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.author    = 'Jan Vereecken'
   s.email     = 'jan.vereecken@gmail.com'
-  s.homepage  = 'http://github.com/javereec/spree_customer_delivery_day'
+  s.homepage  = 'http://github.com/javereec/spree_customer_delivery_date'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
