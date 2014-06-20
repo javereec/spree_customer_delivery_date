@@ -1,0 +1,27 @@
+<!-- insert_bottom '[data-hook="shipping_method_inner"]' -->
+<% if Spree::Config['customer_delivery_date_enabled'] %>
+  <%= form.label :customer_delivery_date, Spree.t(:customer_delivery_date), :id => 'customer_delivery_date_label' %><br />
+  <div id="customer_delivery_date_fields">
+    <%= form.date_field :customer_delivery_date, :class => 'datepicker', 'data-value' => @order.customer_delivery_date %><br />
+    <%= Spree.t(:customer_delivery_date_description) %><br />
+  </div>
+
+  <script type="text/javascript">
+    $('.datepicker').pickadate({
+      min: <%= (Spree::Config['customer_delivery_date_lead_time'].business_days.from_now.to_date - Time.now.to_date).to_i %>,
+      max: 60,
+      disable: [6,7],
+      hiddenSuffix: '',
+      formatSubmit: 'yyyy/mm/dd'
+    });
+
+    <% unless @order.customer_delivery_date -%>
+      $("#customer_delivery_date_fields").hide();
+    <% end %>
+    $("#customer_delivery_date_label").click(function() {
+      $("#customer_delivery_date_fields").toggle( "fast", function() {
+        // Animation complete.
+      });
+    });
+  </script>
+<% end %>
