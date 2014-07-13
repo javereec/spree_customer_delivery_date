@@ -19,6 +19,7 @@ module SpreeCustomerDeliveryDate
 
     config.after_initialize do
       Spree::PermittedAttributes.checkout_attributes << :customer_delivery_date
+      Spree::Api::ApiHelpers.order_attributes.push :customer_delivery_date
     end
   end
 end
