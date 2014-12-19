@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_customer_delivery_date'
-  s.version     = '2.2.2'
+  s.version     = '2.4.0'
   s.summary     = 'Allows the customer to set a delivery day.'
   s.description = s.summary
   s.required_ruby_version = '>= 1.9.3'
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.3.0'
+  s.add_dependency 'spree_core', '~> 2.4.0'
   s.add_dependency 'pickadate-rails'
   s.add_dependency 'business_time'
 
